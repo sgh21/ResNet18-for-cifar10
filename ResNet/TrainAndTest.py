@@ -8,13 +8,13 @@ from ResBlock import ResNet18
 import matplotlib.pyplot as plt
 
 # 超参数设置
-epochs=64   #遍历数据集次数
+epochs=128   #遍历数据集次数
 pre_epoch = 0  # 定义已经遍历数据集的次数
 batch_size=128     #批处理尺寸(batch_size)
 # learningRate = 5e-4       #学习率 Adam
 learningRate = 3e-2       #学习率 SGD
 #scheduler
-T_max=64
+T_max=128
 eta_min=5e-3
 # 整理数据
 X = []
