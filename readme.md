@@ -1,23 +1,27 @@
-#### 演示视频说明
-+ 通过python ModelTest.py进行模型测试
-+ 识别出错时自动弹出图片，可放大查看
-+ x掉图片可以，按任意建继续执行
-+ 关掉图片输出模式，查看全部图片的测试结果
-+ 看到训练集50000张图片，准确率99%
-+ 测试测试集的准确率
-+ 看到测试集10000张图片，准确率93%
-#### Environment
-+ python 3.10
-+ pytorch 2.2.0
-+ torchvision 0.11.1
-+ cuda 12.1
-+ matplotlib 3.1.3
-+ numpy 1.16.4
-#### Get started
-```python
-conda install  python=3.10 pytorch=2.2.0 torchvision=0.11.1 cudatoolkit=12.1 matplotlib=3.1.3 numpy=1.16.4
-```
-#### 运行
-```python
-python ModelTest.py
-```
+<pre class="pseudocode" lineNumber="true">
+% This quicksort algorithm is extracted from Chapter 7, Introduction to Algorithms (3rd edition)
+\begin{algorithm}
+\caption{Quicksort with lineNumber}
+\begin{algorithmic}
+\PROCEDURE{Quicksort}{$A, p, r$}
+    \IF{$p < r$} 
+        \STATE $q = $ \CALL{Partition}{$A, p, r$}
+        \STATE \CALL{Quicksort}{$A, p, q - 1$}
+        \STATE \CALL{Quicksort}{$A, q + 1, r$}
+    \ENDIF
+\ENDPROCEDURE
+\PROCEDURE{Partition}{$A, p, r$}
+    \STATE $x = A[r]$
+    \STATE $i = p - 1$
+    \FOR{$j = p$ \TO $r - 1$}
+        \IF{$A[j] < x$}
+            \STATE $i = i + 1$
+            \STATE exchange
+            $A[i]$ with $A[j]$
+        \ENDIF
+        \STATE exchange $A[i]$ with $A[r]$
+    \ENDFOR
+\ENDPROCEDURE
+\end{algorithmic}
+\end{algorithm}
+</pre>
